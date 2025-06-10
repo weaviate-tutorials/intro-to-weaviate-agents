@@ -1,5 +1,18 @@
 # Interactive Workshop - Weaviate Agents
 
+Table of contents
+- [Introduction](#introduction)
+  - [What are Agents?](#what-are-agents)
+  - [What are Weaviate Agents?](#what-are-weaviate-agents)
+    - [Query Agent](#query-agent)
+    - [Transformation Agent](#transformation-agent)
+    - [Personalization Agent](#personalization-agent)
+  - [Notes and limitations](#notes-and-limitations)
+- [Student steps](#student-steps)
+- [Create a Weaviate Cloud cluster](#create-a-weaviate-cloud-cluster)
+- [Set up your Python environment](#set-up-your-python-environment)
+- [Test your setup](#test-your-setup)
+
 ## Introduction
 
 ### What are Agents?
