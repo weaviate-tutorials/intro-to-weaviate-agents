@@ -103,3 +103,10 @@ If everything is set up correctly, you should see a message like this, indicatin
 Attempting to connect to Weaviate at 3kxk7cmssrkyhjdbuijvg.c0.europe-west3.gcp.weaviate.cloud...
 Great! You are connected to Weaviate Cloud running version: 1.31.0, and all set up for the workshop.
 ```
+
+## Further resources
+
+- [Weaviate: Products](https://weaviate.io/product)
+- [Weaviate Agents documentation](https://weaviate.io/developers/agents)
+- [Weaviate Cloud documentation](https://weaviate.io/developers/wcs)
+- [Weaviate Database documentation](https://weaviate.io/developers/weaviate)
