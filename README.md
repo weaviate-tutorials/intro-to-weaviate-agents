@@ -12,6 +12,7 @@ Table of contents
 - [Create a Weaviate Cloud cluster](#create-a-weaviate-cloud-cluster)
 - [Set up your Python environment](#set-up-your-python-environment)
 - [Test your setup](#test-your-setup)
+- [Further resources](#further-resources)
 
 ## Introduction
 
