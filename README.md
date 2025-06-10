@@ -1,5 +1,39 @@
 # Interactive Workshop - Weaviate Agents
 
+## Introduction
+
+### What are Agents?
+
+An **agent** can perform tasks with some degree of autonomy - i.e. it can make some decisions itself, rather than being driven by a set of rules.
+
+This makes agents powerful tools as a part of a system, especially for tasks that cannot be easily expressed as a set of rules.
+
+### What are Weaviate Agents?
+
+Weaviate Agents are a set of specialized, pre-built agentic services designed for specific tasks. They are designed to work with Weaviate, an AI-native database, to simplify data engineering and AI development workflows.
+
+#### Query Agent
+
+The Weaviate Query Agent is a pre-built agentic service designed to answer natural language queries based on the data stored in Weaviate Cloud.
+
+The user simply provides a prompt/question in natural language, and the Query Agent takes care of all intervening steps to provide an answer.
+
+<center><img src="img/query_agent_architecture_light.png" width="90%"></center>
+
+#### Transformation Agent
+
+The Weaviate Transformation Agent is an agentic service designed to augment and transform data using generative models. Use the Transformation Agent to append new properties and/or update existing properties of data on existing objects in Weaviate.
+
+<center><img src="img/transformation_agent_overview_light.png" width="90%"></center>
+
+#### Personalization Agent
+
+The Weaviate Personalization Agent is an agentic service designed to return personalized recommendations tailored to each user. The Personalization Agent uses data from the associated Weaviate Cloud instance to provide these recommendations.
+
+<center><img src="img/personalization_agent_overview_light.png" width="90%"></center>
+
+### Notes and limitations
+
 All Weaviate Agents are in technical preview (do **not** use them in production)
 
 <center><img src="img/agents_tech_preview.png" width="60%"></center>
