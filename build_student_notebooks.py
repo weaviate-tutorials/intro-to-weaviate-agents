@@ -19,12 +19,16 @@ def remove_solution_blocks(input_file, output_file):
                 flags=re.DOTALL,
             )
 
+            cell.outputs = []
+            cell.execution_count = None
+
     with open(output_file, "w") as f:
         nbformat.write(nb, f)
 
 
 filename_pairs = [
     ("wv-query-agent-finished.ipynb", "wv-query-agent.ipynb")
+    ("wv-personalization-agent-finished.ipynb", "wv-personalization-agent.ipynb")
 ]
 
 for fname_pair in filename_pairs:

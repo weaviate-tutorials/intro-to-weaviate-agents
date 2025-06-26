@@ -1,6 +1,5 @@
 from typing import Dict, Any
 from weaviate import WeaviateClient
-from weaviate.agents.classes import PersonalizationAgentGetObjectsResponse
 from weaviate.classes.query import Filter
 
 
@@ -205,24 +204,6 @@ def compare_genre_match_scores(
     print("-" * (num_sets * 87 + 5))
     for idx, label in enumerate(response_labels):
         print(f"Total genre match score ({label}): {total_scores[idx]}")
-
-
-def print_movie_response_details(response: PersonalizationAgentGetObjectsResponse, n_objects: int = 5, verbose = False) -> None:
-    if response.ranking_rationale is not None:
-        print(f"Ranking rationale: {response.ranking_rationale}")
-
-    for i, obj in enumerate(response.objects[:n_objects]):
-        print(f"*****{i}*****")
-        print(obj.properties["title"])
-        print(obj.properties["genres"])
-        if verbose:
-            print(obj.properties["overview"])
-            print(obj.properties["release_date"])
-            print(f"vote_average: {obj.properties['vote_average']}")
-            print(f"vote_count: {obj.properties['vote_count']}")
-            print(f"popularity: {obj.properties['popularity']}")
-        if obj.original_rank is not None:
-            print(f"original rank: {obj.original_rank}, personalized rank: {obj.personalized_rank}")
 
 
 def get_movie_uuid(client: WeaviateClient, title: str):
