@@ -7,14 +7,11 @@ import re
 
 
 def remove_solution_blocks(input_file, output_file):
-    # Read the notebook
     with open(input_file, "r") as f:
         nb = nbformat.read(f, as_version=4)
 
-    # Process each cell
     for cell in nb.cells:
         if cell.cell_type == "code":
-            # Remove solution blocks (DOTALL makes . match newlines)
             cell.source = re.sub(
                 r"# BEGIN_SOLUTION.*?# END_SOLUTION",
                 "# ADD YOUR CODE HERE",
@@ -22,7 +19,6 @@ def remove_solution_blocks(input_file, output_file):
                 flags=re.DOTALL,
             )
 
-    # Write the modified notebook
     with open(output_file, "w") as f:
         nbformat.write(nb, f)
 
