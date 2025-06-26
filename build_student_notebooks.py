@@ -27,7 +27,7 @@ def remove_solution_blocks(input_file, output_file):
 
 
 filename_pairs = [
-    ("wv-query-agent-finished.ipynb", "wv-query-agent.ipynb")
+    ("wv-query-agent-finished.ipynb", "wv-query-agent.ipynb"),
     ("wv-personalization-agent-finished.ipynb", "wv-personalization-agent.ipynb")
 ]
 
